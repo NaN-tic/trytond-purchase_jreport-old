@@ -3,10 +3,6 @@ msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "jasper:purchase.purchase:"
-msgid "Carrier"
-msgstr "Missatger"
-
-msgctxt "jasper:purchase.purchase:"
 msgid "Date"
 msgstr "Data"
 
