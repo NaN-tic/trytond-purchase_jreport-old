@@ -19,7 +19,7 @@ msgid "Qty"
 msgstr "Qt."
 
 msgctxt "jasper:purchase.purchase:"
-msgid "Quotation"
+msgid "Purchase Request"
 msgstr "Sol·licitud de compra"
 
 msgctxt "jasper:purchase.purchase:"
@@ -32,7 +32,7 @@ msgstr "Tipus de pagament"
 
 msgctxt "jasper:purchase.purchase:"
 msgid "Purchase Order"
-msgstr "Pedido compra"
+msgstr "Comanda de compra"
 
 msgctxt "jasper:purchase.purchase:"
 msgid "Tax"
