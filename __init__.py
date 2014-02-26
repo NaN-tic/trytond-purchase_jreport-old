@@ -8,4 +8,5 @@ from .purchase import *
 def register():
     Pool.register(
         PurchaseReport,
+        PurchaseRequestReport,
         module='purchase_jreport', type_='report')

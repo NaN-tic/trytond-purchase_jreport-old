@@ -4,9 +4,13 @@
 from trytond.pool import PoolMeta
 from trytond.modules.jasper_reports.jasper import JasperReport
 
-__all__ = ['PurchaseReport']
+__all__ = ['PurchaseReport', 'PurchaseRequestReport']
 __metaclass__ = PoolMeta
 
 
 class PurchaseReport(JasperReport):
     __name__ = 'purchase.purchase'
+
+
+class PurchaseRequestReport(JasperReport):
+    __name__ = 'purchase.purchase_request'
