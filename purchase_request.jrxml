@@ -184,12 +184,12 @@
 				</line>
 				<textField>
 					<reportElement x="10" y="32" width="228" height="12" uuid="4a048dbc-1439-47f5-9d11-fab1fb3725b0">
-						<printWhenExpression><![CDATA[$F{supplier_reference-supplier_reference} != '']]></printWhenExpression>
+						<printWhenExpression><![CDATA[$F{supplier_reference-supplier_reference} != null]]></printWhenExpression>
 					</reportElement>
 					<textElement>
 						<font size="9"/>
 					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Supplier reference")+": "+$F{supplier_reference-supplier_reference}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{supplier_reference-supplier_reference} ? tr($V{L},"Supplier reference")+": "+$F{supplier_reference-supplier_reference} : '']]></textFieldExpression>
 				</textField>
 			</band>
 		</groupHeader>
@@ -207,7 +207,7 @@
 				</line>
 				<textField>
 					<reportElement x="10" y="16" width="534" height="12" uuid="2ec6e329-9835-42af-bf17-bf12b2127f0b">
-						<printWhenExpression><![CDATA[$F{payment_term-name} != '']]></printWhenExpression>
+						<printWhenExpression><![CDATA[$F{payment_term-name} != null]]></printWhenExpression>
 					</reportElement>
 					<textElement>
 						<font size="9" isBold="false"/>
@@ -221,7 +221,7 @@
 					<textElement>
 						<font size="9" isBold="false"/>
 					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Payment Type")+": "+$F{payment_type-name}.get($F{party-lang})+"\n"+$F{payment_type-note}.get($F{party-lang}, '')]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{payment_term-name} ? tr($V{L},"Payment Type")+": "+$F{payment_type-name}.get($F{party-lang})+"\n"+$F{payment_type-note}.get($F{party-lang}, '') : '']]></textFieldExpression>
 				</textField>
 			</band>
 		</groupFooter>
