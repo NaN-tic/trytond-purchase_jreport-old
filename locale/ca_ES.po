@@ -2,10 +2,6 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "model:ir.action,name:report_purchase_request"
-msgid "Purchase Request"
-msgstr "Sol·licitud de compra"
-
 msgctxt "jasper:purchase.purchase:"
 msgid "Date"
 msgstr "Data"
@@ -13,46 +9,46 @@ msgstr "Data"
 msgctxt "jasper:purchase.purchase:"
 msgid "Description"
 msgstr "Descripció"
+
+msgctxt "jasper:purchase.purchase:"
+msgid "Payment Term"
+msgstr "Termini pagament"
+
+msgctxt "jasper:purchase.purchase:"
+msgid "Payment Type"
+msgstr "Tipus de pagament"
 
 msgctxt "jasper:purchase.purchase:"
 msgid "Price"
 msgstr "Preu"
 
 msgctxt "jasper:purchase.purchase:"
-msgid "Qty"
-msgstr "Qt."
+msgid "Purchase Order"
+msgstr "Comanda de compra"
 
 msgctxt "jasper:purchase.purchase:"
 msgid "Purchase Request"
 msgstr "Sol·licitud de compra"
 
 msgctxt "jasper:purchase.purchase:"
-msgid "Payment Term"
-msgstr "Termini pagament"
+msgid "Qty"
+msgstr "Qt."
 
 msgctxt "jasper:purchase.purchase:"
-msgid "Payment Type"
-msgstr "Tipus de pagament"
-
-msgctxt "jasper:purchase.purchase:"
-msgid "Purchase Order"
-msgstr "Comanda de compra"
+msgid "Supplier reference"
+msgstr "Referència proveïdor"
 
 msgctxt "jasper:purchase.purchase:"
 msgid "Tax"
 msgstr "Imposts"
 
 msgctxt "jasper:purchase.purchase:"
-msgid "Untaxed"
-msgstr "Base imposable"
-
-msgctxt "jasper:purchase.purchase:"
 msgid "Total"
 msgstr "Total"
 
 msgctxt "jasper:purchase.purchase:"
-msgid "Supplier reference"
-msgstr "Referència proveïdor"
+msgid "Untaxed"
+msgstr "Base imposable"
 
 msgctxt "jasper:purchase.purchase_request:"
 msgid "Date"
@@ -63,14 +59,6 @@ msgid "Description"
 msgstr "Descripció"
 
 msgctxt "jasper:purchase.purchase_request:"
-msgid "Qty"
-msgstr "Qt."
-
-msgctxt "jasper:purchase.purchase_request:"
-msgid "Purchase Request"
-msgstr "Sol·licitud de compra"
-
-msgctxt "jasper:purchase.purchase_request:"
 msgid "Payment Term"
 msgstr "Termini pagament"
 
@@ -83,5 +71,17 @@ msgid "Purchase Order"
 msgstr "Comanda de compra"
 
 msgctxt "jasper:purchase.purchase_request:"
+msgid "Purchase Request"
+msgstr "Sol·licitud de compra"
+
+msgctxt "jasper:purchase.purchase_request:"
+msgid "Qty"
+msgstr "Qt."
+
+msgctxt "jasper:purchase.purchase_request:"
 msgid "Supplier reference"
 msgstr "Referència proveïdor"
+
+msgctxt "model:ir.action,name:report_purchase_request"
+msgid "Purchase Request"
+msgstr "Sol·licitud de compra"
