@@ -83,8 +83,14 @@
 	<field name="payment_type-note" class="java.lang.Object">
 		<fieldDescription><![CDATA[/data/record/payment_type-payment_type/note-note]]></fieldDescription>
 	</field>
-	<field name="reference-reference" class="java.lang.String">
+	<field name="number" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/number-number]]></fieldDescription>
+	</field>
+	<field name="reference" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/reference-reference]]></fieldDescription>
+	</field>
+	<field name="description" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/description-description]]></fieldDescription>
 	</field>
 	<field name="state-state" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/state-state]]></fieldDescription>
@@ -182,7 +188,7 @@
 					<textElement textAlignment="Left">
 						<font size="12" isBold="true"/>
 					</textElement>
-					<textFieldExpression><![CDATA[($F{state-state}.equals("quotation") || $F{state-state}.equals("draft")) ? tr($V{L},"Purchase Request")+" "+$F{reference-reference} : tr($V{L},"Purchase Order")+" "+$F{reference-reference}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[($F{state-state}.equals("quotation") || $F{state-state}.equals("draft")) ? tr($V{L},"Purchase Request")+" "+$F{number} : tr($V{L},"Purchase Order")+" "+$F{number}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="10" y="20" width="228" height="12" uuid="26e6798f-861a-4c79-87d9-3a4c69a4afb3">
@@ -204,6 +210,20 @@
 						<font size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{supplier_reference-supplier_reference} ? tr($V{L},"Supplier reference")+": "+$F{supplier_reference-supplier_reference} : '']]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="10" y="58" width="280" height="14" uuid="53c719cb-1f33-4ba7-b548-f3bb02a3085e"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="10" y="44" width="280" height="14" uuid="c5aec8a9-a952-40d2-b9ad-4717b639e99d"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{reference}]]></textFieldExpression>
 				</textField>
 			</band>
 		</groupHeader>
