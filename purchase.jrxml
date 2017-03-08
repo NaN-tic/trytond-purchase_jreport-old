@@ -50,6 +50,9 @@
 	<field name="company-purchase_qty" class="java.lang.Boolean">
 		<fieldDescription><![CDATA[/data/record/company-company/purchase_qty-purchase_qty]]></fieldDescription>
 	</field>
+	<field name="company-show_uom" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[/data/record/company-company/show_uom-show_uom]]></fieldDescription>
+	</field>
 	<field name="party-full_name" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/party-party/full_name-full_name]]></fieldDescription>
 	</field>
@@ -131,6 +134,9 @@
 	<field name="line-note" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/lines-lines/note-note]]></fieldDescription>
 	</field>
+	<field name="line-symbol" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/lines-lines/unit-unit/symbol-symbol]]></fieldDescription>
+	</field>
 	<field name="user-name" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/create_uid-create_uid/name-name]]></fieldDescription>
 	</field>
@@ -149,7 +155,7 @@
 		<groupHeader>
 			<band height="91">
 				<textField>
-					<reportElement x="57" y="75" width="148" height="12" uuid="480c2baa-c354-4696-9624-c6328ee9294c"/>
+					<reportElement x="75" y="75" width="130" height="12" uuid="480c2baa-c354-4696-9624-c6328ee9294c"/>
 					<textElement>
 						<font size="9"/>
 					</textElement>
@@ -349,7 +355,7 @@
 	<detail>
 		<band height="19" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
-				<reportElement x="57" y="2" width="367" height="12" uuid="fee4defc-7102-4a87-85a6-b9e0e5c7c74f"/>
+				<reportElement x="75" y="2" width="349" height="12" uuid="fee4defc-7102-4a87-85a6-b9e0e5c7c74f"/>
 				<textElement markup="styled">
 					<font size="9"/>
 				</textElement>
@@ -375,6 +381,15 @@
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{line-quantity} ? $F{company-purchase_qty} ? (int)Double.valueOf($F{line-quantity}.trim()).doubleValue() : Double.valueOf($F{line-quantity}.trim()).doubleValue() : '0']]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="3" width="20" height="10" uuid="5a14e998-e4b1-4be8-8258-19bf9acf0455">
+					<printWhenExpression><![CDATA[$F{company-show_uom}]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{line-symbol}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
