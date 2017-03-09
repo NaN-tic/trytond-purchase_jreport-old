@@ -163,7 +163,7 @@
 				</textField>
 				<textField>
 					<reportElement x="16" y="75" width="40" height="12" uuid="11ac5fde-4fc0-418d-bf89-a440dcf11d91"/>
-					<textElement textAlignment="Center">
+					<textElement textAlignment="Right">
 						<font size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Qty")]]></textFieldExpression>
@@ -280,7 +280,7 @@
 			</textField>
 			<textField>
 				<reportElement x="16" y="2" width="40" height="12" uuid="845e3c2f-289f-4749-be42-e03b42c5ab6c"/>
-				<textElement textAlignment="Center">
+				<textElement textAlignment="Right">
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{line-quantity} ? $F{company-purchase_qty} ? (int)Double.valueOf($F{line-quantity}.trim()).doubleValue() : Double.valueOf($F{line-quantity}.trim()).doubleValue() : '0']]></textFieldExpression>
