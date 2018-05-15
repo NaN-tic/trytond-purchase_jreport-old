@@ -50,6 +50,9 @@
 	<field name="company-purchase_qty" class="java.lang.Boolean">
 		<fieldDescription><![CDATA[/data/record/company-company/purchase_qty-purchase_qty]]></fieldDescription>
 	</field>
+	<field name="company-rgpd" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/company-company/rgpd-rgpd]]></fieldDescription>
+	</field>
 	<field name="party-full_name" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/party-party/full_name-full_name]]></fieldDescription>
 	</field>
